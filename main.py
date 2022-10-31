@@ -1,8 +1,6 @@
 # importing modules
-from os import scandir
 from random import randint
 from random import choice
-
 
 # creating batting and bowling functions
 def batting(target):
@@ -19,7 +17,6 @@ def batting(target):
             print("Your innings ends.")
             scoreboard(target, my_score)
     return my_score
-
 
 def bowling(target):
     comp_score = 0
@@ -57,7 +54,6 @@ ask = input("Do you call heads or tails?")
 decision = ["bat" , "bowl"]
 comp_choice = choice(decision)
 toss = choice(coin)
-
 
 # Conducting toss
 
@@ -103,3 +99,5 @@ elif comp_score > my_score:
     print("You lost the game by", margin , "runs.")
 else:
     print("It was a tie.")
+
+print("Thank you for playing this game.")
